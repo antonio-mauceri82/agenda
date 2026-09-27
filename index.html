@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <meta name="theme-color" content="#c4b5fd">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Agenda Turni">
+  <meta name="description" content="Prospetto cambi turno dal 15 settembre 2026 al 10 giugno 2027.">
+  <title>Prospetto Cambi Turno</title>
+  <link rel="icon" href="agenda-icon-lavanda.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" sizes="180x180" href="agenda-icon-lavanda-180.png">
+  <link rel="manifest" href="manifest.webmanifest?v=20260911-lavanda-1">
+  <link rel="stylesheet" href="styles.css?v=20260912-oggi-stabile-1">
+</head>
+<body>
+  <main class="schedule-board">
+    <section id="prospettoView" aria-label="Prospetto cambi turno" hidden>
+      <p id="loadingStatus" class="loading-status">Caricamento del prospetto…</p>
+      <div id="weeks" class="weeks"></div>
+    </section>
+
+    <section id="agendaView" class="agenda-view" aria-label="Agenda personale">
+      <nav class="agenda-quick-nav" aria-label="Navigazione rapida dell’agenda">
+        <button id="goToday" class="agenda-go-today" type="button">OGGI</button>
+      </nav>
+      <div id="agendaDays" class="agenda-months" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <dialog class="turn-dialog" id="turnDialog" aria-labelledby="dialogTitle">
+    <div class="dialog-shell">
+      <header class="dialog-header">
+        <div><p id="dialogGroup"></p><h2 id="dialogTitle">Dettaglio turno</h2></div>
+        <button class="close-button" id="closeDialog" type="button" aria-label="Chiudi dettaglio">×</button>
+      </header>
+      <div id="dialogBody"></div>
+    </div>
+  </dialog>
+
+  <noscript><p class="loading-status loading-status--error">Per visualizzare il prospetto è necessario attivare JavaScript.</p></noscript>
+  <script src="data.js?v=20260911-turni-13-14"></script>
+  <script src="app.js?v=20260911-torna-oggi-1"></script>
+</body>
+</html>
+
+
