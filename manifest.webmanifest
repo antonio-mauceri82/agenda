@@ -1,6 +1,6 @@
 {
-  "name": "Prospetto Cambi Turno",
-  "short_name": "Agenda Turni",
+  "name": "Agenda",
+  "short_name": "Agenda",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#f5f3ff",
