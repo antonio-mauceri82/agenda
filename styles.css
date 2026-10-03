@@ -249,7 +249,7 @@ button { font: inherit; cursor: pointer; }
   background-size: 100% 21px;
   color: var(--agenda-text);
   font-family: inherit;
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 400;
   line-height: 21px;
   text-align: left;
@@ -658,7 +658,7 @@ button { font: inherit; cursor: pointer; }
   .agenda-day__content { gap: 2px; padding: 4px 6px; overflow: hidden; }
   .agenda-day__turn { font-size: 1.08rem; line-height: 1; }
   .agenda-day__note-space { margin-top: 0; }
-  .agenda-day__note-space:focus { font-size: 16px !important; font-weight: 400 !important; }
+  .agenda-day__note-space:focus { font-size: 13px !important; font-weight: 400 !important; }
   .agenda-day__prospect,
   .week__agenda-link { width: 30px; height: 30px; font-size: .82rem; }
 
