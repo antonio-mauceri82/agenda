@@ -249,10 +249,16 @@ button { font: inherit; cursor: pointer; }
   background-size: 100% 21px;
   color: var(--agenda-text);
   font-family: inherit;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 21px;
+  line-height: 25.846px;
   text-align: left;
+  transform: scale(0.8125);
+  transform-origin: top left;
+  width: 123.077%;
+  height: 51.692px;
+  min-height: 51.692px;
+  max-height: 51.692px;
   overflow-x: hidden;
   overflow-y: auto;
   overflow-wrap: anywhere;
@@ -273,9 +279,9 @@ button { font: inherit; cursor: pointer; }
 .agenda-day__note-space.has-note {
   background-color: transparent;
   color: var(--agenda-text);
-  font-size: 13px !important;
+  font-size: 16px !important;
   font-weight: 400 !important;
-  line-height: 21px;
+  line-height: 25.846px;
   white-space: pre-wrap;
 }
 
@@ -658,7 +664,7 @@ button { font: inherit; cursor: pointer; }
   .agenda-day__content { gap: 2px; padding: 4px 6px; overflow: hidden; }
   .agenda-day__turn { font-size: 1.08rem; line-height: 1; }
   .agenda-day__note-space { margin-top: 0; }
-  .agenda-day__note-space:focus { font-size: 13px !important; font-weight: 400 !important; }
+  .agenda-day__note-space:focus { font-size: 16px !important; font-weight: 400 !important; }
   .agenda-day__prospect,
   .week__agenda-link { width: 30px; height: 30px; font-size: .82rem; }
 
