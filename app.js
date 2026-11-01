@@ -2,9 +2,9 @@
   "use strict";
 
   const data = window.PROSPETTO_DATA;
-  const REQUIRED_DATA_VERSION = "2026-11-01-feriali-02nov-3";
+  const REQUIRED_DATA_VERSION = "2026-11-01-feriali-02nov-4";
   if (data?.meta?.clientDataVersion !== REQUIRED_DATA_VERSION) {
-    const refreshKey = "agenda-data-refresh-20261101-3";
+    const refreshKey = "agenda-data-refresh-20261101-4";
     if (!sessionStorage.getItem(refreshKey)) {
       sessionStorage.setItem(refreshKey, "1");
       const url = new URL(location.href);
