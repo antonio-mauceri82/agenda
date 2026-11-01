@@ -2,6 +2,17 @@
   "use strict";
 
   const data = window.PROSPETTO_DATA;
+  const REQUIRED_DATA_VERSION = "2026-11-01-feriali-02nov-3";
+  if (data?.meta?.clientDataVersion !== REQUIRED_DATA_VERSION) {
+    const refreshKey = "agenda-data-refresh-20261101-3";
+    if (!sessionStorage.getItem(refreshKey)) {
+      sessionStorage.setItem(refreshKey, "1");
+      const url = new URL(location.href);
+      url.searchParams.set("v", REQUIRED_DATA_VERSION);
+      location.replace(url.toString());
+      return;
+    }
+  }
   const STORAGE_KEY = "prospetto-cambi-turno:selected-v1";
   const VACATION_STORAGE_KEY = "prospetto-cambi-turno:vacations-v1";
   const AGENDA_DAY_STORAGE_KEY = "prospetto-cambi-turno:agenda-days-v1";
